@@ -9,13 +9,13 @@
 </head>
 
 <body>
-	<h1>Lab04 Task 2 - Standard Palindrome</h1>
+	<h1>Lab04 Task 4 - Standard Palindrome</h1>
 	
 	<hr/>
 	<?php
 		if (isset ($_POST["submit_btn"]))
 		{
-			$str = $_POST["text"];
+			$str = htmlspecialchars($_POST["text"]);
 			$noSpace = str_replace(" ", "", $str);
 			$noPunctuation = preg_replace("#[[:punct:]]#", "", $noSpace);
 			$lowerCase = strtolower($noPunctuation);
