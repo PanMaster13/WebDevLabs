@@ -14,8 +14,8 @@
 	<hr/>
 	
 	<form action="perfectpalindrome.php" method="post">
-	<p>String: <input type="text" name="text"></p>
-	<p><input type="submit" name="submit_btn" value="Checkfor Perfect Palindrome"></p>
+	<p>String: <input type="text" name="text"/></p>
+	<p><input type="submit" name="submit_btn" value="Checkfor Perfect Palindrome"/></p>
 	</form>
 </body>
 

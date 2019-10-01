@@ -11,8 +11,8 @@
 <body>
 	<h1>Web Programming Form - Lab 4</h1>
 	<form action="strprocess.php" method="post">
-	<p>Enter a text: <input type="text" name="text"></p>
-	<p><input type="submit" name="submit_btn"></p>
+	<p>Enter a text: <input type="text" name="text"/></p>
+	<p><input type="submit" name="submit_btn"/></p>
 	</form>
 </body>
 

@@ -24,18 +24,18 @@
 			
 			if ($result == 0)
 			{
-				echo "<p style='color:green'>The text you entered: <strong>'", $str, "'</strong> is a standard palindrome!";
+				echo "<p style='color:green'>The text you entered: <strong>'", $str, "'</strong> is a standard palindrome!</p>";
 			}
 			else
 			{
-				echo "<p style='color:red'>The text you entered: <strong>'", $str, "'</strong> is <strong>not</strong> a standard palindrome!";
+				echo "<p style='color:red'>The text you entered: <strong>'", $str, "'</strong> is <strong>not</strong> a standard palindrome!</p>";
 			}
 		}
 	?>
 	
 	<form action="standardpalindromeself.php" method="post">
-	<p>String: <input type="text" name="text"></p>
-	<p><input type="submit" name="submit_btn" value="Checkfor Standard Palindrome"></p>
+	<p>String: <input type="text" name="text"/></p>
+	<p><input type="submit" name="submit_btn" value="Checkfor Standard Palindrome"/></p>
 	</form>
 	
 	<hr/>

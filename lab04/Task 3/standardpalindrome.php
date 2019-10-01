@@ -21,11 +21,11 @@
 			
 			if ($result == 0)
 			{
-				echo "<p>The text you entered: <strong>'", $str, "'</strong> is a standard palindrome!";
+				echo "<p>The text you entered: <strong>'", $str, "'</strong> is a standard palindrome!</p>";
 			}
 			else
 			{
-				echo "<p>The text you entered: <strong>'", $str, "'</strong> is <strong>not</strong> a standard palindrome!";
+				echo "<p>The text you entered: <strong>'", $str, "'</strong> is <strong>not</strong> a standard palindrome!</p>";
 			}
 		}
 		else
