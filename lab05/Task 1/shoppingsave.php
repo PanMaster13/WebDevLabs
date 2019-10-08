@@ -11,12 +11,13 @@
 <body>
 	<h1>Web Programming - Lab 5</h1>
 	<?php
-		if (isset ($_POST["submit_btn"]))
+		if (!(empty($_POST["item"]) && empty($_POST["quantity"])))
 		{
 			// Writing into file
 			$item = $_POST["item"];
 			$qty = $_POST["quantity"];
-			$filename = "data/shop.txt";
+			// Finds text file outside of lab05 folder
+			$filename = "../../data/shop.txt";
 			$handle = fopen($filename, "a");
 			$data = $item . "," . $qty . "<br/>";
 			fwrite($handle, $data);
