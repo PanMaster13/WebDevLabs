@@ -14,6 +14,7 @@
 	<hr/>
 	<table border="1">
 	<?php
+		echo "<tr><th>Number</th><th>Name</th><th>Email</th></tr>";
 		$filename = "data/guestbook.txt";
 		$working_data = array();
 		$handle = fopen($filename, "r");
