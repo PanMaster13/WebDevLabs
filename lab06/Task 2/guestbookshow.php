@@ -15,25 +15,27 @@
 	<table border="1">
 	<?php
 		$filename = "data/guestbook.txt";
-		if (!file_exists($filename) || filesize($filename) == 0){
-			echo "<p>There are no records in the guestbook.</p>";
-		} else {
-			$record = file($filename);
-			echo "<tr><th>Number</th><th>Name</th><th>Email</th></tr>";
-			
-			for ($i = 0; $i < count($record); $i++){
-				$line = explode(",", $record[$i]);
-				$display = $i + 1;
-				echo "<tr>";
-				echo "<th>" . $display . "</th>";
-				echo "<td>" . $line[0] . "</td>";
-				echo "<td>" . $line[1] . "</td>";
-				echo "</tr>";
+		$working_data = array();
+		$handle = fopen($filename, "r");
+		while (!feof($handle)){
+			$curr_line = fgets($handle);
+			if ($curr_line != ""){
+				$working_data [] = $curr_line;
 			}
 		}
-		$handle = fopen($filename, "r");
-		
 		fclose($handle);
+		$length = count($working_data);
+		sort($working_data);
+		for ($i = 0; $i < $length; $i++){
+			$line = $working_data[$i];
+			$data = explode(",", $line);
+			$display = $i + 1;
+			echo "<tr>";
+			echo "<th>" . $display . "</th>";
+			echo "<td>" . $data[0] . "</td>";
+			echo "<td>" . $data[1] . "</td>";
+			echo "</tr>";
+		}
 	?>
 	</table>
 	<hr/>

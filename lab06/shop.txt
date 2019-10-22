@@ -1,3 +1,5 @@
 Borger,4
 Olive oil,5
 Choco Latte,5
+Chicken,5
+Vege,5
