@@ -5,7 +5,7 @@
 	<title>VIP</title>
 </head>
 <body>
-	<h1>Lab 8 - VIP Registration</h1>
+	<h1>Lab 9 - VIP Registration</h1>
 	<form action="vip_confirm.php" method="post">
 		<p>First name: <input type="text" name="first_name"></p>
 		<p>Last name: <input type="text" name="last_name"></p>

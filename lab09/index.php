@@ -12,7 +12,7 @@ if (isset($_SESSION['email'])){
 	<title>VIP</title>
 </head>
 <body>
-	<h1>Lab 8 - Welcome to VIP Home</h1>
+	<h1>Lab 9 - Welcome to VIP Home</h1>
 	<h3>
 		<a href="vip_register.php">Register New VIP account</a>
 	</h3>

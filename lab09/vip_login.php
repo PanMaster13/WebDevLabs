@@ -52,7 +52,7 @@
 	<title>VIP</title>
 </head>
 <body>
-	<h1>Lab 8 - VIP Login</h1>
+	<h1>Lab 9 - VIP Login</h1>
 	<form action="vip_login.php" method="post">
 		<p>Login ID: <input type="text" name="login_id" placeholder="Your Email"></p>
 		<p>Password: <input type="password" name="password"></p>
